@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banking Application Form</title>
+  <link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+  <form>
+    <fieldset class="test">
+    <legend>Personal Information</legend>
+    <label class="persItem">First Name:<input class="persItemText" type="text" size="15"placeholder="First Name"></label>
+    <label class="persItem">MI:<input type="text" class="persItemText" size="1" placeholder="M.I."></label>
+    <label class="persItem">Last Name:<input type="text" class="persItemText" size="20" placeholder="Last Name"></label>
+    <label class="persItem">Address:<input type="text" class="persItemText" size="40"placeholder="Address"></label>
+    <label class="persItem">Occupation:<input type="text" class="persItemText" size="25"placeholder="Occupation"></label>
+    <label class="persItem">Employer:<input type="text" class="persItemText" size="20"placeholder="Employer"></label>
+    <label class="persItem">Employer's Address:<input type="text" class="persItemText" size="40"placeholder="Employer Address"></label>
+    </fieldset>
+  </form>
+  <form>
+    <fieldset class="loanInfo">
+      <legend>Loan Options</legend>
+      <input type="radio" name="loanType">Commercial
+      <input type="radio" name="loanType">Real Estate
+      <input type="radio" name="loanType">Personal
+      <input type="radio" name="loanType">Mortgage
+      <input type="text" placeholder="Loan Amount">
+      <input type="radio" name="loanLength">5 Years
+      <input type="radio" name="loanLength">10 Years
+      <input type="radio" name="loanLength">15 Years
+      <ul>
+        <li><input type="checkbox">I have a down payment</li>
+        <li><input type="checkbox">Out-of-State Resident</li>
+        <li><input type="checkbox">Married</li>
+        <li><input type="checkbox">Loan will be Co-signed</li>
+      </ul>
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+    <legend>Comments</legend>
+      <textarea cols="132" rows="6"></textarea>
+    </fieldset>
+  </form>
+  <form class="validate">
+    <fieldset>
+    <legend>Contact Information</legend>
+      <input type="email" name="email" placeholder="E-mail Address" required>
+      <input type="tel" name="tel" placeholder="Telephone Number" required>
+      <input type="url" name="url" placeholder="LinkedIn URL" required>
+    </fieldset>
+  </form>
+</body>
+</html>
